@@ -22,7 +22,7 @@ function fillForm() {
 //    $('input[ng-model]').trigger('input');
     var sc = angular.element("[ng-controller=SiteController]").scope();
     var m = sc.borrower.contact;
-    m.contact.first_name = 'Joe';
+    m.first_name = 'Joe';
     sc.$apply();
     
 

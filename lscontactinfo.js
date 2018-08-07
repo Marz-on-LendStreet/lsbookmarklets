@@ -20,8 +20,8 @@ function fillForm() {
     $('input[placeholder="City"]').val('SWEETWATER').trigger('input');
     $('input[placeholder="Zip code"]').val('795566611').trigger('input');
 //    $('input[ng-model]').trigger('input');
-    var sc = angular.element("[ng-controller=SiteController]").scope();
-    var m = sc.borrower.contact;
+//    var sc = angular.element("[ng-controller=SiteController]").scope();
+    var m = $scope.borrower.contact;
     m.first_name = 'Joe';
     alert(m.first_name);
     sc.$apply();

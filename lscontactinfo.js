@@ -23,6 +23,7 @@ function fillForm() {
     var sc = angular.element("[ng-controller=SiteController]").scope();
     var m = sc.borrower.contact;
     m.first_name = 'Joe';
+    alert(m.first_name);
     sc.$apply();
     
 

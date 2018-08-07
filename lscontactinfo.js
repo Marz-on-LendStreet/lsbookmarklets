@@ -1,13 +1,13 @@
-alert('begin bookmarklet');
+//alert('begin bookmarklet');
 if (typeof jQuery == 'undefined') {
-    alert('jQuery undefined');
+    //alert('jQuery undefined');
     var script    = document.createElement( 'script' );
     script.src    = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
     script.onload = fillForm;
     document.body.appendChild(script);
 }
 else {
-    alert('jQuery defined');
+    //alert('jQuery defined');
     fillForm();
 }
 function fillForm() {

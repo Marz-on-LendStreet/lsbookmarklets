@@ -20,6 +20,12 @@ function fillForm() {
     $('input[placeholder="City"]').val('SWEETWATER').trigger('input');
     $('input[placeholder="Zip code"]').val('795566611').trigger('input');
     $('input[ng-model]').trigger('input');
+    var sc=angular.element("[ng-controller=SiteController]").scope();
+    var m=sc.borrower;
+    m.contact.first_name = 'Joe';
+    sc.$apply();
+    
+
     //var state = 'option[text="Texas"]';
     //$('select[data-test="state"]').find(state).attr("selected", "selected");
 }
